@@ -1,0 +1,19 @@
+---
+# Omada Software Controller deployment settings
+
+omada_install_dir: /opt/omada
+
+# mbentley/omada-controller is the well-maintained community image.
+# Pin an explicit tag rather than 'latest' for reproducibility.
+omada_image: "mbentley/omada-controller:5.15"
+
+omada_timezone: "America/Detroit"
+
+# Host networking is used for reliable AP discovery/adoption, so these
+# ports are informational (documented, not mapped). Omada uses:
+#   8088/tcp  - management HTTP
+#   8043/tcp  - management HTTPS
+#   8843/tcp  - captive portal HTTPS
+#   27001/udp - app discovery
+#   29810/udp - device discovery
+#   29811-29816/tcp - device adoption / management

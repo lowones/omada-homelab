@@ -1,0 +1,6 @@
+---
+- name: Deploy Omada Software Controller
+  hosts: omada
+  become: true
+  roles:
+    - omada

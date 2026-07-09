@@ -1,0 +1,9 @@
+# Copy to terraform.tfvars and fill in, or export TF_VAR_* / source from Vault.
+# proxmox_api_token_id and _secret are required (no defaults).
+proxmox_api_token_id     = "terraform@pam!t2"
+proxmox_api_token_secret = "REPLACE_ME"
+
+# Optional overrides (defaults shown):
+# ssh_public_key_path = "~/.ssh/id_ed25519.pub"
+# vm_id               = 249
+# vm_ip               = "192.168.0.249"
